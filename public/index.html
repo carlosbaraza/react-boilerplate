@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+    <link rel="manifest" href="/manifest.webmanifest">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--
+      Notice the use of %PUBLIC_URL% in the tag above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>Another cool app | by APPy.land</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav class="main-nav">
+        <button class="fa fa-times-circle-o"></button>
+        <button class="fa fa-bars"></button>
+        <div class="logo">
+          <h1>Another <span>cool</span> app</h1>
+        </div>
+        <h2><a href="https://appy.land/">by <span>APP</span>y.land</a></h2>
+      </nav>
+
+      <section class="info">
+        <section>
+          <h3><span class="fa fa-info-circle"></span> What is this?</h3>
+          <p>
+            Another cool and useless app created to showcase my skills with web
+            technologies.
+          </p>
+        </section>
+
+        <section>
+          <h3><span class="fa fa-cloud-download"></span> Progressive web application</h3>
+          <p>
+            This application <strong>works offline</strong> and can be installed in your device's
+            desktop.
+          </p>
+          <p>
+            After installing the App in your desktop, you can use it just
+            like any other application.
+          </p>
+        </section>
+
+        <section>
+          <h3><span class="fa fa-users"></span> Author</h3>
+          <p>
+            <a href="https://appy.land/">APPy.land</a> is a collection of progressive web applications.
+          </p>
+          <p>
+            The main Software Engineer is <a href="http://www.carlosbaraza.com">Carlos Baraza</a>.
+          </p>
+        </section>
+      </section>
+
+      <div id="root"></div>
+    </div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start`.
+      To create a production bundle, use `npm run build`.
+    -->
+    <script type="text/javascript">
+      if (!window.location.toString().match(/localhost/)) {
+        !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on"];analytics.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);analytics.push(e);return analytics}};for(var t=0;t<analytics.methods.length;t++){var e=analytics.methods[t];analytics[e]=analytics.factory(e)}analytics.load=function(t){var e=document.createElement("script");e.type="text/javascript";e.async=!0;e.src=("https:"===document.location.protocol?"https://":"http://")+"cdn.segment.com/analytics.js/v1/"+t+"/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(e,n)};analytics.SNIPPET_VERSION="4.0.0";
+        analytics.load("b0zhbCuKauOAvhzWgNElUfgEAtuozFHo");
+        analytics.page();
+        }}();
+      }
+    </script>
+  </body>
+</html>

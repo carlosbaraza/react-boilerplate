@@ -13,10 +13,10 @@ export class PortfolioItem extends Component {
     return (
       <div className={styles.wrapper}>
         <div className={styles.inner}>
-          <img className={styles.image} src={item.img}></img>
+          {item.img ? <img className={styles.image} src={item.img} /> : null}
           <div className={styles.content}>
             <h2>{item.title}</h2>
-            <p>{item.description}</p>
+            {item.description ? <p>{item.description}</p> : null}
           </div>
         </div>
       </div>

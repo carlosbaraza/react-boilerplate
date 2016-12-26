@@ -1,18 +1,22 @@
 import React, { Component } from 'react';
 import styles from './App.mod.scss';
-import { spring, Motion, TransitionMotion } from 'react-motion';
+import { Portfolio } from './Portfolio/Portfolio';
+
+import portfolio from '../data/portfolio';
 
 class App extends Component {
   constructor(props, context) {
     super(props, context);
-  }
 
-  componentDidMount() {
+    this.state = {
+      portfolioItems: portfolio.items,
+    };
   }
 
   render() {
     return (
       <div className={styles.app}>
+        <Portfolio items={this.state.portfolioItems} />
       </div>
     );
   }

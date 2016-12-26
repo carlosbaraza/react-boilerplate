@@ -1,0 +1,15 @@
+.portfolio {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: stretch;
+  align-content: stretch;
+
+  margin: 0;
+  padding: 5px;
+  position: relative;
+  width: 100%;
+  min-height: calc(100vh - 60px);
+
+  background: #FEFEFE;
+}

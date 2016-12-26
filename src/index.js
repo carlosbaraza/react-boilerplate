@@ -6,8 +6,9 @@ import './nav-bar';
 
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
+import App from './components/App';
 
+// General styles
 import './index.scss';
 
 ReactDOM.render(
